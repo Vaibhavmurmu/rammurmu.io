@@ -50,10 +50,8 @@
         <p>&copy; 2025 rammurmu</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/your-script.js"></script>
-    <script src="scripts.min.js"></script>
-    <script src="dark-mode.js"></script>
-    <script src="search.js"></script>
+    <!-- Canonical split entrypoints: utility modules first, then page module -->
+    <script src="post.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
