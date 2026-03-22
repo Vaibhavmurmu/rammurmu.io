@@ -94,6 +94,19 @@ a:hover {
     transform: translateY(0);
 }
 
+/* Subtle gradient utility classes for content cards */
+.card-gradient-project {
+    background: linear-gradient(160deg, #ffffff 0%, #eef4ff 100%);
+    border: 1px solid #d7e4ff;
+    color: #111827;
+}
+
+.card-gradient-blog {
+    background: linear-gradient(160deg, #ffffff 0%, #effcf6 100%);
+    border: 1px solid #d1fae5;
+    color: #111827;
+}
+
 /* Typewriter effect */
 .typewriter h1 {
     overflow: hidden; 
