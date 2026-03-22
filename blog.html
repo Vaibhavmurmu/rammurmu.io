@@ -11,17 +11,33 @@
 <body class="bg-gray-100 font-sans">
 
     <!-- Navbar -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-gray-800 text-lg font-bold">John Doe</a>
-            <div class="space-x-6">
-                <a href="index.html#about" class="text-gray-800 hover:text-gray-500">Home</a>
-                <a href="about.html" class="text-gray-800 hover:text-gray-500">About</a>
-                <a href="index.html#projects" class="text-gray-800 hover:text-gray-500">Projects</a>
-                <a href="index.html#skills" class="text-gray-800 hover:text-gray-500">Skills</a>
-                <a href="contact.html" class="text-gray-800 hover:text-gray-500">Contact</a>
-                <a href="blog.html" class="text-gray-800 hover:text-gray-500 font-bold">Blog</a>
-            </div>
+    <nav class="bg-white shadow-md" aria-label="Primary">
+        <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-4">
+            <a href="index.html" class="text-gray-800 text-lg font-bold">Ram Murmu</a>
+            <button class="mobile-nav-toggle md:hidden nav-focus-ring" type="button" aria-expanded="false" aria-controls="primary-nav-menu" data-nav-toggle>
+                <span class="sr-only">Toggle navigation menu</span>
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 7h16M4 12h16M4 17h16"></path>
+                </svg>
+            </button>
+            <ul class="hidden md:flex items-center space-x-2 lg:space-x-4">
+                <li><a href="index.html#about" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="project.html" class="nav-link">Projects</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link nav-link-active" aria-current="page">Blog</a></li>
+            </ul>
+        </div>
+        <div id="primary-nav-menu" class="mobile-nav-panel md:hidden" data-mobile-nav hidden>
+            <ul class="px-6 pb-4 pt-2">
+                <li><a href="index.html#about" class="mobile-nav-link">Home</a></li>
+                <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                <li><a href="project.html" class="mobile-nav-link">Projects</a></li>
+                <li><a href="index.html#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                <li><a href="blog.html" class="mobile-nav-link nav-link-active" aria-current="page">Blog</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -65,5 +81,6 @@
         </div>
     </footer>
 
+    <script src="nav-menu.js"></script>
 </body>
     </html>
