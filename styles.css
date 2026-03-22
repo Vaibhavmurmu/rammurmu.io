@@ -336,3 +336,64 @@ main, #blog-posts article {
         display: flex;
     }
     }
+
+/* Reusable navbar utilities */
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.875rem;
+    color: #1f2937;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(59, 130, 246, 0.08);
+    color: #1d4ed8;
+}
+
+.nav-link-active {
+    color: #1d4ed8;
+    background-color: rgba(59, 130, 246, 0.12);
+}
+
+.mobile-nav-link {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 0.875rem 0.875rem;
+    color: #1f2937;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mobile-nav-link:hover {
+    background-color: rgba(59, 130, 246, 0.08);
+    color: #1d4ed8;
+}
+
+.nav-focus-ring:focus-visible,
+.nav-link:focus-visible,
+.mobile-nav-link:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.mobile-nav-toggle {
+    border-radius: 0.5rem;
+    padding: 0.625rem;
+    color: #1f2937;
+}
+
+.mobile-nav-panel {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.25s ease, opacity 0.25s ease;
+}
+
+.mobile-nav-panel.is-open {
+    max-height: 28rem;
+    opacity: 1;
+}
